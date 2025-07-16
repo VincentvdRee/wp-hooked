@@ -1,6 +1,6 @@
 # WP-Hooked
 
-WP-Hooked is a modern PHP library for registering WordPress actions and filters using PHP 8 attributes. It provides a clean, type-safe, and object-oriented approach to managing hooks in your WordPress projects.
+WP-Hooked is a modern PHP package for registering WordPress actions and filters using PHP 8 attributes. It provides a clean and object-oriented approach to managing hooks in your WordPress projects.
 
 ## Features
 - Register WordPress actions and filters using PHP attributes
@@ -46,7 +46,7 @@ class MyHooks
 ```php functions.php
 use VincentvdRee\WP_Hooked\HookRegistrar;
 
-$hooks = new MyHooks(namespace: 'MyNamespace');
-HookRegistrar::register($hooks);
+$hooked = new Hooked(namespace: 'MyNamespace');
+$hooked->init();
 ```
 
