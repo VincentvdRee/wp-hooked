@@ -7,7 +7,7 @@ use PhpCsFixer\Finder;
 use PhpCsFixer\Runner\Parallel\ParallelConfigFactory;
 
 return (new Config())
-    ->setParallelConfig(ParallelConfigFactory::detect()) // @TODO 4.0 no need to call this manually
+    ->setParallelConfig(ParallelConfigFactory::detect())
     ->setRiskyAllowed(true)
     ->setRules([
         '@PHP82Migration' => true,
@@ -16,17 +16,9 @@ return (new Config())
         '@PhpCsFixer' => true,
         '@PhpCsFixer:risky' => true,
         'general_phpdoc_annotation_remove' => ['annotations' => ['expectedDeprecation']], // one should use PHPUnit built-in method instead
-        'header_comment' => ['header' => <<<'EOF'
-            This file is part of WP-Hooked.
-
-            (c) Vincent van der Ree <vincentvanderree@proton.me>
-
-            This source file is subject to the MIT license that is bundled
-            with this source code in the file LICENSE.
-            EOF],
         'modernize_strpos' => true, // needs PHP 8+ or polyfill
         'native_constant_invocation' => ['strict' => false], // strict:false to not remove `\` on low-end PHP versions for not-yet-known consts
-        'no_useless_concat_operator' => false, // TODO switch back on when the `src/Console/Application.php` no longer needs the concat
+        'no_useless_concat_operator' => false,
         'phpdoc_order' => [
             'order' => [
                 'type',
