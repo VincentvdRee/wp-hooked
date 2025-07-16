@@ -44,7 +44,7 @@ class MyHooks
 ```
 
 ```php functions.php
-use VincentvdRee\WP_Hooked\HookRegistrar;
+use VincentvdRee\WP_Hooked\Hooked;
 
 $hooked = new Hooked(namespace: 'MyNamespace');
 $hooked->init();
