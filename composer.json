@@ -1,9 +1,17 @@
 {
     "name": "vincentvdree/wp-hooked",
     "description": "A small package for defining actions and filters in WordPress using classes and attributes.",
-    "version": "0.1.0",
-    "type": "library",
+    "type": "package",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent van der Ree",
+            "email": "vincentvanderree@proton.me"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/VincentvdRee/wp-hooked/issues"
+    },
     "autoload": {
         "psr-4": {
             "VincentvdRee\\WP_Hooked\\": "src/"
