@@ -1,0 +1,17 @@
+{
+    "name": "vincentvdree/wp-hooked",
+    "description": "A small package for defining actions and filters in WordPress using classes and attributes.",
+    "version": "0.1.0",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VincentvdRee\\WP_Hooked\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "friendsofphp/php-cs-fixer": "^3.83",
+        "szepeviktor/phpstan-wordpress": "^2.0"
+    }
+}
